@@ -52,7 +52,7 @@ Upgrades
 		on earn:yield stickcollect
 	*repair2
 		name:Fuel the Second Machine
-		desc:This machine uses your sticks to maintain a campfire-like  furnace.
+		desc:This machine uses your sticks to maintain a campfire-like furnace.
 		cost:10 sticks
 		req:repair1
 		on earn:yield crafter1

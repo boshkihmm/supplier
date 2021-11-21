@@ -1,7 +1,7 @@
 Let's make a game!
 	name:Supplier Game (beta)
 	by:boshki0987
-	desc:Version 0.0.5
+	desc:Version 0.0.6
 
 Settings
 	building cost increase:110%
@@ -15,14 +15,15 @@ Layout
 		class:fullWidth
 	*buttons
 		contains:Buttons
-	*store
+*store
 		contains:buildings, upgrades
 	*buildings
-		contains:tag:object, tag:objectbutton
-		header:Machines
+		contains:BulkDisplay, Buildings
+		header:Machinery
 		tooltip origin:left
 	*upgrades
 		contains:Upgrades
+		header:Projects
 		costs:hide
 		names:hide
 		

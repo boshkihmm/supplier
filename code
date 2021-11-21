@@ -1,7 +1,7 @@
 Let's make a game!
 	name:Supplier Game (beta)
 	by:boshki0987
-	desc:Version 0.0.3
+	desc:Version 0.0.4
 
 Settings
 	building cost increase:110%
@@ -49,13 +49,13 @@ Upgrades
 		name:Shake the First Machine
 		desc:A little jolt should get it going.
 		req:intro3
-		on earn:yield stickcollect
+		on earn:yield 1 stickcollect
 	*repair2
 		name:Fuel the Second Machine
 		desc:This machine uses your sticks to maintain a campfire-like furnace.
 		cost:10 sticks
 		req:repair1
-		on earn:yield crafter1
+		on earn:yield 1 crafter1
 
 Buildings
 
@@ -64,10 +64,12 @@ Buildings
 		desc:A damaged, rusty machine that slowly collects the numerous sticks on the ground. It's not much, but it'll do for now.<//>Level:[this]<//>Collects [this] sticks per second
 		on tick:yield this stick
 		tag:generator
-		req:have repair1
+		req:repair1
 	*crafter1
 		name:Assembler
 		desc:This machine can construct and repair small machines using the materials you have.
 		tag:crafter
-		req:have repair2
+		req:repair2
+		
+		
 		
